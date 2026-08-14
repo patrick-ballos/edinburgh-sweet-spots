@@ -1,4 +1,4 @@
-# edinburgh-sweet-spots
+# Edinburgh Sweet Spot!
 
 Web Development
 
