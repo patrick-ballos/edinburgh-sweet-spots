@@ -17,6 +17,48 @@
     </header>
 
     <main>
+        
+        <section>
+            <h2>Contact the Guide</h2>
+            <p>Have a recommendation, feedback, or a question about travel spots? Fill out the form below!</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <p>
+                        <label for="guide-name">Name:</label><br>
+                        <input type="text" id="guide-name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="guide-email">Email:</label><br>
+                        <input type="email" id="guide-email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="guide-subject">Subject:</label><br>
+                        <select id="guide-subject" name="subject" required>
+                            <option value="">-- Please select an option --</option>
+                            <option value="suggest-place">Suggest a Place</option>
+                            <option value="correct-detail">Correct a Detail</option>
+                            <option value="ask-question">Ask a Travel Question</option>
+                            <option value="something-else">Something Else</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="guide-message">Message:</label><br>
+                        <textarea id="guide-message" name="message" rows="5" required></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Send message</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        
         <section>
             <h2>Contact Us</h2>
             <p>Have questions or travel recommendations to share? Reach out to me below:</p>
