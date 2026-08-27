@@ -56,6 +56,57 @@
         </section>
     </main>
 
+<section>
+    <h2>Suggest a New Place</h2>
+    <form action="#" method="post">
+
+        <p>
+            <label for="place-name">Place Name:</label><br>
+            <input type="text" id="place-name" name="place_name" required>
+        </p>
+
+        <fieldset>
+            <legend>What category best describes this place?</legend>
+
+            <input type="radio" id="cat-food" name="category" value="food-dessert" checked>
+            <label for="cat-food">Food & Desserts</label><br>
+
+            <input type="radio" id="cat-outdoor" name="category" value="outdoors">
+            <label for="cat-outdoor">Outdoors & Nature</label><br>
+
+            <input type="radio" id="cat-culture" name="category" value="culture-art">
+            <label for="cat-culture">Culture & Art</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>What makes this place great?</legend>
+
+            <input type="checkbox" id="good-affordable" name="good_points" value="affordable">
+            <label for="good-affordable">Affordable / Budget Friendly</label><br>
+
+            <input type="checkbox" id="good-scenic" name="good_points" value="scenic">
+            <label for="good-scenic">Scenic Views / Photogenic</label><br>
+
+            <input type="checkbox" id="good-cozy" name="good_points" value="cozy">
+            <label for="good-cozy">Cozy Atmosphere</label>
+        </fieldset>
+
+        <br>
+
+        <p>
+            <label for="suggester-email">Your Email Address:</label><br>
+            <input type="email" id="suggester-email" name="email" required>
+        </p>
+
+        <p>
+            <button type="submit">Send Suggestion</button>
+        </p>
+
+    </form>
+</section>
+
     <footer>
         <p>Created by Patrick Ballos - 2026</p>
     </footer>
