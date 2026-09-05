@@ -1,10 +1,10 @@
 :root {
-  --brand: #8e24aa;       
-  --dark-ink: #1f1a24;    
-  --muted-grey: #6c757d;  
-  --light-bg: #f9f5fa;    
-  --card-bg: #ffffff;     
-  --border-color: #e1bee7;
+  --brand: #2C3947;       
+  --dark-ink: #2C3947;    
+  --muted-grey: #547A95;  
+  --light-bg: #E8EDF2;    
+  --card-bg: #E8EDF2;     
+  --border-color: #2C3947;
 }
 
 * {
