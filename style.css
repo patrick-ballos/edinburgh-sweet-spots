@@ -1,10 +1,10 @@
 :root {
-  --brand: #2C3947;       
-  --dark-ink: #2C3947;    
-  --muted-grey: #547A95;  
-  --light-bg: #E8EDF2;    
-  --card-bg: #E8EDF2;     
-  --border-color: #2C3947;
+  --light-bg: #111844;     /* Website background (Dark Navy) */
+  --dark-ink: #EAE0CF;     /* Main text color (Warm Cream) */
+  --card-bg: #7288AE;      /* Card background (Slate Blue) */
+  --brand: #4B5694;        /* Accents, borders, buttons (Indigo) */
+  --border-color: #4B5694;
+  --muted-grey: #EAE0CF;
 }
 
 * {
@@ -14,71 +14,92 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: var(--dark-ink);
   background-color: var(--light-bg);
+  color: var(--dark-ink);
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: var(--card-bg);
-  border-bottom: 2px solid var(--border-color);
-  padding: 1.5rem;
-  text-align: center;
+.site-header, header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2353;
+  border-bottom: 2px solid var(--brand);
+  padding: 1.5rem 2rem;
 }
 
 header h1 {
-  color: var(--brand);
-  margin: 0 0 0.5rem 0;
-}
-
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  color: var(--muted-grey);
-  border-top: 1px solid var(--border-color);
-  margin-top: 3rem;
+  color: #ffffff;
+  margin: 0;
 }
 
 nav ul {
+  display: flex;
+  gap: 20px; 
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0;
+  margin: 0;
 }
 
 nav li {
-  display: inline-block;
-  margin: 0 0.75rem;
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--brand);
+  color: var(--dark-ink);
   font-weight: bold;
 }
 
 nav a:hover {
+  color: var(--card-bg);
   text-decoration: underline;
 }
 
-.place-card {
-  background-color: var(--card-bg);
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px; /* Vertical centering space */
+  background-color: #1a2353;
+  border: 1px solid var(--brand);
   border-radius: 8px;
-  padding: 1.25rem; /* At least 16px (20px) */
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.hero-banner h2 {
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.hero-banner p {
+  margin: 0;
+  color: var(--dark-ink);
+}
+
+.place-grid {
+  display: flex;
+  flex-wrap: wrap; /* Prevents squashing on narrow screens */
+  gap: 24px;
+}
+
+.place-card {
+  flex: 1 1 240px; 
+  background-color: var(--card-bg);
+  color: #111844; 
   border-left: 6px solid var(--brand);
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .place-card h3 {
   font-size: 1.35rem;
-  color: var(--brand);
+  color: #111844;
   margin-top: 0;
 }
 
@@ -88,70 +109,21 @@ nav a:hover {
   border-radius: 4px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-  background-color: var(--card-bg);
-}
-
-th, td {
-  padding: 0.75rem;
-  border: 1px solid var(--border-color);
-  text-align: left;
-}
-
-th {
-  background-color: var(--border-color);
-  color: var(--dark-ink);
-}
-
-fieldset {
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
-  background-color: var(--card-bg);
-}
-
-legend {
-  font-weight: bold;
-  color: var(--brand);
-  padding: 0 0.5rem;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
-  width: 100%;
-  padding: 0.6rem;
-  border: 1px solid var(--muted-grey);
-  border-radius: 4px;
-  font-size: 1rem;
-  margin-top: 0.25rem;
-}
-
-button[type="submit"] {
-  background-color: var(--brand);
-  color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
+.place-card a {
+  color: #111844;
   font-weight: bold;
 }
 
-button[type="submit"]:hover {
-  opacity: 0.9;
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: 3px solid var(--brand);
-  outline-offset: 2px;
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--muted-grey);
+  border-top: 1px solid var(--brand);
+  margin-top: 3rem;
 }
