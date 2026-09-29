@@ -22,7 +22,7 @@ body {
 
 .page {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   grid-template-areas:
     "masthead"
     "main"
@@ -165,9 +165,10 @@ html, body {
   overflow-x: hidden;
 }
 
-img, table {
+img {
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 
 input[type="text"],
